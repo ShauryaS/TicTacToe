@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="shauryas.tictactoe.Games"
+    android:background="#000000">
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="140dp"
+        android:text="New Game"
+        android:id="@+id/newgamebuttonmaker"
+        android:background="#404040"
+        android:onClick="newGame"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="67.5dp"
+        android:text="Settings"
+        android:id="@+id/settingsbutton"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentTop="true"
+        android:onClick="settingsPressed"
+        android:layout_toRightOf="@+id/newgamebuttonmaker"
+        android:layout_toEndOf="@+id/newgamebuttonmaker"
+        android:textSize="25dp"
+        android:background="#404040"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="67.5dp"
+        android:text="Profile"
+        android:id="@+id/profilebutton"
+        android:onClick="checkProf"
+        android:layout_alignBottom="@+id/newgamebuttonmaker"
+        android:layout_alignLeft="@+id/settingsbutton"
+        android:layout_alignStart="@+id/settingsbutton"
+        android:background="#404040"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gamelist"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/newgamebuttonmaker"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
